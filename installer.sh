@@ -12,8 +12,8 @@
 
 PACKAGE_DIR='xstreamity/main'
 
-MY_IPK="enigma2-plugin-extensions-xstreamity_3.60_all.ipk"
-MY_DEB="eenigma2-plugin-extensions-xstreamity_3.60_all.deb"
+MY_IPK="enigma2-plugin-extensions-xstreamity_3.61_all.ipk"
+MY_DEB="eenigma2-plugin-extensions-xstreamity_3.61_all.deb"
 
 ########################################################################################################################
 # Auto ... Do not change
