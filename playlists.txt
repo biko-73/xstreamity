@@ -8,7 +8,6 @@ http://m.saiyan.xyz:80/get.php?username=gZamBEthBKehwRWS&password=bE4cM5WjxRpxTA
 http://queen-tv.co/get.php?username=Jz6po8G3og&password=O84WRHXf&type=m3u
 http://dnz.sunucu551.xyz:8000/get.php?username=ACQaKDUGmj&password=OiLcI6JMlH&type=m3u
 http://fireott.biz:2052/get.php?username=574519711875&password=095468767719&type=m3u
-http://dnz.sunucu551.xyz:8000/get.php?username=oKPqx9ykZZ&password=vbSdT6bncN&type=m3u
 http://txm.flysat.live/get.php?username=152050410332701&password=GKcEBb1tkl&type=m3u
 http://revteam1.offshorerev.cc/get.php?username=_iQYZBy&password=LKeashbFdc&type=m3u
 http://revteam1.offshorerev.cc/get.php?username=_lPQAle&password=XXjPQc4LzG&type=m3u
