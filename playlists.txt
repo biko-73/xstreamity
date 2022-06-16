@@ -2,7 +2,6 @@ http://hellohelios.crabdance.com/get.php?username=9ESUdOYO9Y&password=bugSyNm4q4
 http://megavod.ddns.net:5000/get.php?username=bmWvRRHUbM&password=As7HcyOoju&type=m3u
 http://iptv.icsnleb.com:25461/get.php?username=12&password=12&type=m3u&output=ts
 http://vip.tvxvip.com:25443/get.php?username=V578HLKQ67bh&password=Y2VGScCbdo&type=m3u
-http://user.scalecdn.co:8080/get.php?username=Brown&password=Brown&type=m3u
 http://revteam1.offshorerev.cc/get.php?username=SPIDER_l6xFX3&password=QNO4e8QpEY&type=m3u
 http://tv.pro-ott.com:25443/get.php?username=MAGjjVckX41z7&password=dKKwN7auYx&type=m3u
 http://m.saiyan.xyz:80/get.php?username=gZamBEthBKehwRWS&password=bE4cM5WjxRpxTAkW&type=m3u
