@@ -13,3 +13,5 @@ http://tptv.cz/get.php?username=A444987DF94A289&password=mvCGLSHV8A&type=m3u
 http://tptv.cz/get.php?username=7238680394D366F&password=BJcHsrEZKg&type=m3u
 http://m1.webvps.de:25443/get.php?username=V7sGhTrHHi5a&password=ACmx0Bnv7R&type=m3u_plus
 http://m1.webvps.de:25443/get.php?username=V7sGhTrHHi5a&password=ACmx0Bnv7R&type=m3u_plus
+
+http://213.202.230.51:25461/get.php?username=live_sport1&password=live_sport_ios&type=m3u
