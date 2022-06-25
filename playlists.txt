@@ -15,3 +15,4 @@ http://m1.webvps.de:25443/get.php?username=V7sGhTrHHi5a&password=ACmx0Bnv7R&type
 http://m1.webvps.de:25443/get.php?username=V7sGhTrHHi5a&password=ACmx0Bnv7R&type=m3u_plus
 
 http://213.202.230.51:25461/get.php?username=live_sport1&password=live_sport_ios&type=m3u
+http://arabicsawa.xyz:25461/get.php?username=SAWAIPTV&password=Kemo4511214&type=m3u
