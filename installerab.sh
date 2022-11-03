@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # ==============================================
-# SCRIPT : DOWNLOAD AND INSTALL xstreamity-abstract-skin #
+# SCRIPT : DOWNLOAD AND INSTALL abstract-skin_2 #
 # =====================================================================================================================
 # Command: wget https://raw.githubusercontent.com/biko-73/xstreamity/main/installerab.sh -O - | /bin/sh #
 # =====================================================================================================================
@@ -11,8 +11,9 @@
 ########################################################################################################################
 
 PACKAGE_DIR='xstreamity/main'
-MY_IPK="enigma2-plugin-extensions-xstreamity-abstract-skin_1.0_all.ipk"
 
+MY_IPK="enigma2-plugin-extensions-xstreamity-abstract-skin_2_all.ipk"
+MY_DEB="enigma2-plugin-extensions-xstreamity-abstract-skin.deb"
 
 ########################################################################################################################
 # Auto ... Do not change
@@ -20,26 +21,22 @@ MY_IPK="enigma2-plugin-extensions-xstreamity-abstract-skin_1.0_all.ipk"
 
 # Decide : which package ?
 MY_MAIN_URL="https://raw.githubusercontent.com/biko-73/"
-if which opkg > /dev/null 2>&1; then
+if which dpkg > /dev/null 2>&1; then
+	MY_FILE=$MY_DEB
+	MY_URL=$MY_MAIN_URL$PACKAGE_DIR'/'$MY_DEB
+else
 	MY_FILE=$MY_IPK
 	MY_URL=$MY_MAIN_URL$PACKAGE_DIR'/'$MY_IPK
-else
-	echo
-	echo ======================================
-	echo == OPKG not found. Cannot continue. ==
-	echo ======================================
-	echo
-	exit 1
 fi
 MY_TMP_FILE="/tmp/"$MY_FILE
 
 echo ''
-echo '****************************************************************************'
-echo '**                                 STARTED                                **'
-echo '****************************************************************************'
-echo "**                            Uploaded by: Biko_73                        **"
-echo "**            https://www.tunisia-sat.com/forums/threads/3898738/         **"
-echo "****************************************************************************"
+echo '************************************************************'
+echo '**                         STARTED                        **'
+echo '************************************************************'
+echo "**                 Uploaded by: Biko_73                   **"
+echo "**  https://www.tunisia-sat.com/forums/threads/3898738/   **"
+echo "************************************************************"
 echo ''
 
 # Remove previous file (if any)
@@ -51,7 +48,6 @@ echo $MY_SEP
 echo 'Downloading '$MY_FILE' ...'
 echo $MY_SEP
 echo ''
-
 wget -T 2 $MY_URL -P "/tmp/"
 
 # Check download
@@ -62,8 +58,11 @@ if [ -f $MY_TMP_FILE ]; then
 	echo 'Installation started'
 	echo $MY_SEP
 	echo ''
-
-	opkg install --force-reinstall $MY_TMP_FILE
+	if which dpkg > /dev/null 2>&1; then
+		apt-get install --reinstall $MY_TMP_FILE -y
+	else
+		opkg install --force-reinstall $MY_TMP_FILE
+	fi
 	MY_RESULT=$?
 
 	# Result
@@ -73,7 +72,11 @@ if [ -f $MY_TMP_FILE ]; then
 		echo "   >>>>   SUCCESSFULLY INSTALLED   <<<<"
 		echo ''
 		echo "   >>>>         RESTARING         <<<<"
-		init 4; sleep 4; init 3;
+		if which systemctl > /dev/null 2>&1; then
+			sleep 2; systemctl restart enigma2
+		else
+			init 4; sleep 4; init 3;
+		fi
 	else
 		echo "   >>>>   INSTALLATION FAILED !   <<<<"
 	fi;
